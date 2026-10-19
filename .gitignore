@@ -1,0 +1,97 @@
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+.eggs/
+pip-wheel-metadata/
+share/python-wheels/
+*.manifest
+*.spec
+pip-log.txt
+pip-delete-this-directory.txt
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+cython_debug/
+
+# ===== Virtual environments =====
+.venv/
+venv/
+ENV/
+env/
+.env
+.env.*
+!.env.example
+
+# ===== Jupyter =====
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# ===== IDE / OS =====
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ===== Project data & models (large / private) =====
+# 原始与处理后的音频
+data/raw/**
+!data/raw/**/.gitkeep
+data/processed/**
+!data/processed/**/.gitkeep
+data/hard_removed/
+
+# 训练输出、日志、难样本导出
+outputs/
+*.log
+logs/
+
+# 预训练权重（体积大，由脚本下载）
+pretrained/
+*.pt
+*.pth
+*.bin
+*.ckpt
+*.onnx
+
+# TensorBoard
+runs/
+**/tensorboard/
+
+# 难样本打包
+*.zip
+
+# ===== Secrets / local =====
+*.pem
+id_rsa
+id_rsa.pub
+id_ed25519
+id_ed25519.pub
+.ssh/
+credentials*
+secrets*
+
+# ===== Misc =====
+*.tmp
+*.bak
+.cache/
+.torch/
+*.wav
+*.WAV
+!docs/**/*.wav
